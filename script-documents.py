@@ -134,7 +134,7 @@ smtp_password = config["EMAIL_PASS"]
 
 # Configuración del mensaje
 sender = config["EMAIL_USER"]
-receiver = config["EMAIL_DEST"]
+receiver = ['email@ss.com','emai2@ss.com']
 subject = f'Ventas del {intial_date}-{final_date} Facturador'
 body = 'Se envia los Documentos emitidos en los puntos de Venta'
 archivo_adjunto = zip_file_path
