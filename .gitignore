@@ -3,3 +3,4 @@ venv/
 Documentos/
 .env
 main.ipynb
+*.zip
