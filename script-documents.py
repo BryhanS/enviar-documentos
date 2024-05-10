@@ -153,7 +153,7 @@ with open(archivo_adjunto, 'rb') as f:
     message.attach(part)
 
 # Iniciar sesión en el servidor SMTP y enviar el correo
-with smtplib.SMTP(smtp_server, smtp_port) as server:
+with smtplib.SMTP(smtp_server, smtp_port,timeout=5) as server:
     server.starttls()  # Habilitar cifrado TLS
     server.login(smtp_username, smtp_password)
     server.sendmail(sender, receiver, message.as_string())
